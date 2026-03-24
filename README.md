@@ -26,7 +26,7 @@ A real-time health monitoring system built with ESP32 that measures **Heart Rate
 | ESP32 DevKit V1 | Main microcontroller |
 | MAX30102 | Heart rate + SpO2 sensor |
 | MLX90614 | Infrared temperature sensor |
-| 2× 100Ω resistors | I2C pull-up resistors (signal stability) |
+| 2× 1000Ω resistors | I2C pull-up resistors (signal stability) |
 | Breadboard | For connections |
 | Jumper wires | For wiring |
 | USB cable (micro-USB) | Power + programming |
@@ -52,12 +52,12 @@ Both sensors use **I2C** and share the same data pins on the ESP32.
 
 ### Pull-up Resistors (Important!)
 
-Two **100Ω pull-up resistors** are used on the I2C lines to strengthen the signal:
+Two **1000Ω pull-up resistors** are used on the I2C lines to strengthen the signal:
 
 ```
 3.3V ──┬──────────────────┐
        │                  │
-      100Ω               100Ω
+      1000Ω               1000Ω
        │                  │
       SDA (GPIO 21)      SCL (GPIO 22)
        │                  │
@@ -70,7 +70,7 @@ Two **100Ω pull-up resistors** are used on the I2C lines to strengthen the sign
 **Why are these needed?**
 I2C is an "open-drain" protocol — sensors communicate by pulling the SDA/SCL lines DOWN to 0V. But when idle, the lines need to sit HIGH at 3.3V. The pull-up resistors act like a spring, holding the lines at 3.3V by default and allowing sensors to pull them low when sending data. Without them, the signal can be weak or noisy — especially on a breadboard with multiple sensors. The resistors ensure clean, reliable communication between the ESP32 and both sensors.
 
-> Standard I2C pull-up values are 4.7kΩ, but 100Ω works well for short breadboard distances and actually gives a stronger, faster signal.
+> Standard I2C pull-up values are 4.7kΩ, but 1000Ω works well for short breadboard distances and actually gives a stronger, faster signal.
 
 ---
 
