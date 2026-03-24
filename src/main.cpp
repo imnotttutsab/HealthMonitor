@@ -14,8 +14,8 @@
 #include <Adafruit_MLX90614.h>
 
 // ===== WIFI CREDENTIALS =====
-char ssid[] = "shivpradhan_2";       // your WiFi name
-char pass[] = "CLB44917B9";    // your WiFi password
+char ssid[] = "your_wifi_name";       // your WiFi name
+char pass[] = "your_wifi_password";    // your WiFi password
 
 // ===== BLYNK TIMER =====
 BlynkTimer timer;
