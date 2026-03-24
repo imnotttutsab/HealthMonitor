@@ -186,7 +186,8 @@ fee-biotechengrg/
 
 ## 👨‍💻 Authors
 
-Utsab Raj Bhattarai || Tangsep Chongbang || Shubham Pokhrel || Sumyak Limbu || Tushar Aidi
+Utsab Raj Bhattarai (Software) || Tangsep Chongbang (Hardware) || Shubham Pokhrel (Report) || Sumyak Limbu (Hardware) || Tushar Aidi (Hardware, Report and Logistics)
+
 Bachelors in Computer Engineering Students at Pulchowk Engineering College
 
 ---
