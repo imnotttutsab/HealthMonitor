@@ -1,7 +1,7 @@
 // ===== BLYNK CONFIG - must be at very top =====
-#define BLYNK_TEMPLATE_ID   "TMPL6jdqX86M6"
+#define BLYNK_TEMPLATE_ID   "your_template_id"
 #define BLYNK_TEMPLATE_NAME "Health Monitor"
-#define BLYNK_AUTH_TOKEN    "p7k02cMnkdIW6MeMjaNyC3ymqSpkEWV-"
+#define BLYNK_AUTH_TOKEN    "your_auth_token"
 #define BLYNK_PRINT Serial
 
 #include <Arduino.h>
